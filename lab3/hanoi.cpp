@@ -19,7 +19,7 @@ void AddNode(int ring, char from, char to)
     node->ring = ring;
     node->from = from;
     node->to = to;   // budem chitat'
-
+    node->prev = prev;
 
     if (tail == nullptr) 
         head = node;
